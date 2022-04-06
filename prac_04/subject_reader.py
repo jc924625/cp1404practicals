@@ -4,6 +4,7 @@ Data file -> lists program
 """
 FILENAME = "subject_data.txt"
 def main():
+    """start of program"""
     data = get_data()
     print(data)
     print_data(data)
@@ -25,6 +26,7 @@ def get_data():
     return new_list
 
 def print_data(data):
+    """display subject lecturer and number of students """
     for subject in data:
         print("{} is taught by {:2} and has {:3} students.".format(*subject))
 main()
